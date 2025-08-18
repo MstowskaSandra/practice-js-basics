@@ -10,7 +10,7 @@ console.log(a, b, c);
 function getSum(a, b, c) {
     const numbers = [a, b, c];
     numbers.sort(function(a, b){ return b-a;});
-    console.log("sort numbers:", numbers);
+    console.log("Sort numbers:", numbers);
     const sum = numbers[0] + numbers[1];
     return sum;
 }
