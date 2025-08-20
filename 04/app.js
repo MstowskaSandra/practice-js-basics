@@ -20,10 +20,9 @@ console.log("Largest numbers:", largestNumbers);
 
 
 function arithmeticMean(arr) {
-    if( arr.length !== 0) {
-    return arr.reduce((acc, curr) => acc + curr, 0) / arr.length;
-    } else {
+    if( arr.length === 0) {
         return 0;
     }
+    return arr.reduce((acc, curr) => acc + curr, 0) / arr.length;
 }
 console.log(`Arithmetic mean of ${arr} is ${arithmeticMean(arr)}`);
